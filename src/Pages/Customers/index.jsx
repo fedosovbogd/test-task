@@ -84,19 +84,19 @@ const Customers = () => {
             </div>
           </div>
           <div className={s.customers__tableWrapper}>
-          <table>
-            <tr>
-              <td className={s.customers__tableTitles}>Customer Name</td>
-              <td className={s.customers__tableTitles}>Company</td>
-              <td className={s.customers__tableTitles}>Phone Number</td>
-              <td className={s.customers__tableTitles}>Email</td>
-              <td className={s.customers__tableTitles}>Country</td>
-              <td className={s.customers__tableTitles}>Status</td>
-            </tr>
-            {customersList.map((el, id) => (
-              <CustomersListItem key={id} {...el} />
-            ))}
-          </table>
+            <table>
+              <tr>
+                <td className={s.customers__tableTitles}>Customer Name</td>
+                <td className={s.customers__tableTitles}>Company</td>
+                <td className={s.customers__tableTitles}>Phone Number</td>
+                <td className={s.customers__tableTitles}>Email</td>
+                <td className={s.customers__tableTitles}>Country</td>
+                <td className={s.customers__tableTitles}>Status</td>
+              </tr>
+              {customersList.map((el, id) => (
+                <CustomersListItem key={id} {...el} />
+              ))}
+            </table>
           </div>
           <div className={s.customers__sign}>
             <p className={s.customers__signTitle}>
@@ -105,25 +105,35 @@ const Customers = () => {
             <div>
               <ul className={s.customers__paggination}>
                 <li>
-                  <span><img src="src/assets/img/pagginationArrow.svg" alt="arrow" /></span>
+                  <span>
+                    <img
+                      src="pagginationArrow.svg"
+                      alt="arrow"
+                    />
+                  </span>
                 </li>
                 <li className={s.customers__pagginationActive}>
                   <span>1</span>
-               </li>
+                </li>
                 <li className={s.customers__pagginationItem}>
                   <span>2</span>
-               </li>
-                <li className={s.customers__pagginationItem}> 
+                </li>
+                <li className={s.customers__pagginationItem}>
                   <span>3</span>
-               </li>
+                </li>
                 <li className={s.customers__pagginationItem}>
                   <span>4</span>
-               </li>
+                </li>
                 <li className={s.customers__pagginationItem}>
                   <span>5</span>
-               </li>
+                </li>
                 <li className={s.customers__pagginationItem}>
-                  <span><img src="src/assets/img/pagginationArrow.svg" alt="arrow" /></span>
+                  <span>
+                    <img
+                      src="pagginationArrow.svg"
+                      alt="arrow"
+                    />
+                  </span>
                 </li>
               </ul>
             </div>

@@ -14,8 +14,8 @@ const NavItem = ({ title, img, id }) => {
             <img
               src={
                 isActive != id
-                  ? `src/assets/img/Nav/${img}.svg`
-                  : `src/assets/img/Nav/${img}-active.svg`
+                  ? `/Nav/${img}.svg`
+                  : `/Nav/${img}-active.svg`
               }
               alt="itemImg"
             />
@@ -23,8 +23,8 @@ const NavItem = ({ title, img, id }) => {
           </div>
           <img src={
                 isActive != id
-                  ? `src/assets/img/Nav/arrow.svg`
-                  : `src/assets/img/Nav/arrow-active.svg`
+                  ? `/Nav/arrow.svg`
+                  : `/Nav/arrow-active.svg`
               } alt="arrow" />
         </p>
       </li>

@@ -15,10 +15,10 @@ const Nav = () => {
         <div className={s.nav__header}>
           <img
             className={s.nav__logo}
-            src="src/assets/img/Nav/Logo.svg"
+            src="/Nav/Logo.svg"
             alt="Logo"
           />
-          <h1 className={s.nav__title}>
+          <h1 className={s.nav__title}> 
             Dashboard<span>v.01</span>
           </h1>
         </div>
@@ -30,7 +30,7 @@ const Nav = () => {
         <div className={s.nav__profile}>
           <img
             className={s.nav__profileImg}
-            src="src/assets/img/Nav/profile.png"
+            src="/Nav/profile.png"
             alt="profile"
           />
           <div>
